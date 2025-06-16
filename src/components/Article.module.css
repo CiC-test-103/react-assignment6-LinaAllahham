@@ -1,0 +1,26 @@
+/* Variable Imports */
+@import '../variables.css';
+
+.article {
+  color: var(--clr-grayishBlue);
+  font-family: var(--ff-base);
+  font-weight: var(--fw-bold);
+  font-size: var(--font-paragraph);
+  line-height: 1.5;
+  margin-bottom: 1.1rem;
+
+
+  letter-spacing: -0.4px;
+  
+}
+@media (max-width: 375px) {
+ .article {
+   font-size: 11.75px;
+   line-height: 1.5;
+   letter-spacing: 0.1px;
+   font-weight: var(--fw-bold);
+   padding-bottom: 15px;
+
+
+  }
+}

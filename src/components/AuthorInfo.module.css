@@ -1,0 +1,20 @@
+/* Variable Imports */
+@import '../variables.css';
+
+.author-info {
+    margin-left: 1rem;
+
+    letter-spacing: -0.3px;
+}
+
+.author-info h5 {
+  color: var(--clr-desaturatedDarkBlue);
+  font-family: var(--ff-base);
+  font-size: 12.4px;
+  font-weight: var(--fw-bold);
+  padding-bottom: 0;
+}
+.author-info h6 {
+    color: var(--clr-grayishBlue);
+    font-size: 12px;
+}

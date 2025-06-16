@@ -1,4 +1,7 @@
 /** Component Imports */
+import Card from './components/Card'
+
+
 import Example from './components/Example'
 
 /**
@@ -14,8 +17,9 @@ import Example from './components/Example'
 
 const App = () => {
   return (
-    <div>
-      {<Example /> /** You can remove this when you wish, it's provided as an example of modular styling */}
+    <div>  
+      {<Card/>
+       /** You can remove this when you wish, it's provided as an example of modular styling }
       
       Shift the overall look and feel by adding these wonderful 
       touches to furniture in your home
@@ -27,7 +31,7 @@ const App = () => {
       Michelle Appleton
       28 Jun 2020
 
-      Share
+      Share */}
     </div>
   )
 }

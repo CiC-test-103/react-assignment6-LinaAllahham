@@ -1,0 +1,176 @@
+/* Variable Imports */
+@import '../variables.css';
+
+.social-share {
+  margin-left: auto;
+  right: 7px;
+
+  position: relative;
+}
+
+.social-share .btn {
+  padding: 8px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  
+
+  position: relative;
+  z-index: 1;
+}
+
+.social-share .btn:hover {
+  background-color: var(--clr-desaturatedDarkBlue);
+}
+
+/* Change this selector */
+.social-share .btn:hover img {
+  filter: brightness(0) invert(1);
+}
+
+/* Optional: Keep the transition on the img element */
+.social-share .btn img {
+  transition: filter 0.3s ease;
+
+
+  width: 14px;
+  height: 12px;
+}
+
+
+/* Tooltip bubble */
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 25px); 
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--clr-veryDarkGrayishBlue);
+  padding: 18px 28px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  z-index: 10;
+  min-width: 260px;
+  /*max-width: 240px;*/
+}
+.tooltip span {
+  color: var(--clr-grayishBlue);
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 14px;
+}
+
+.socialIcons img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+}
+
+.socialIcons img:hover {
+  transform: scale(1.15);
+}
+
+/* Tooltip arrow */
+.tooltipArrow {
+  position: absolute;
+  top: calc(100% - 1px);
+   left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid var(--clr-veryDarkGrayishBlue);
+}
+.tooltip {
+  align-items: center;
+  justify-content: center;
+}
+/* Remove hover styles and replace with: */
+.social-share .btn[aria-expanded="true"] {
+  background-color: var(--clr-desaturatedDarkBlue);
+}
+
+.social-share .btn[aria-expanded="true"] img {
+  filter: brightness(0) invert(1);
+}
+@media (max-width: 375px) {
+  .tooltip {
+
+  /*position: absolute;*/
+  bottom: -100%;
+
+  
+  transform: translateX(-83%);
+  
+  background: var(--clr-veryDarkGrayishBlue);
+  padding: 25px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  
+  
+  align-items: flex-start;
+  
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  z-index: 20;
+  
+  width: 300px;
+  
+
+    
+    
+  }
+
+  .tooltipArrow {
+    display: none;
+  }
+
+  /* Ensure article info stays below */
+  .art-info {
+    
+    z-index: 10;
+  }
+
+  .tooltip span {
+    
+    margin: auto;
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 0.7rem;
+  }
+
+   .socialIcons {
+    
+    width: 150%;
+    justify-content: flex-start; /* Align icons to left */
+    gap: 16px;
+    padding-top: 0;
+  }
+
+  .socialIcons img {
+  width: 18px;
+  height: 18px;
+}
+  
+
+  /* Adjust article info spacing */
+  .art-info {
+    padding-bottom: 60px; /* Make space for bubble */
+    position: relative;
+    z-index: 10;
+  }
+  .social-share .btn {
+    z-index: 30;
+  }
+}
+

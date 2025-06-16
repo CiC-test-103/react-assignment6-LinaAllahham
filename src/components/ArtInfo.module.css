@@ -1,0 +1,26 @@
+/* Variable Imports */
+@import '../variables.css';
+
+.article-info {
+  color: var(--clr-desaturatedDarkBlue);
+  font-family: var(--ff-base);
+  font-weight: var(--font-bold);
+  font-size: 15px;
+  
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 375px) {
+ .article-head {
+   font-size: 11px;
+   line-height: 1;
+   letter-spacing: 0.5px;
+   font-weight: var(--fw-bold);
+   
+
+
+  }
+}
+
+

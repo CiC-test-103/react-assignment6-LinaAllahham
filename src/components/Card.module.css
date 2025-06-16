@@ -1,0 +1,31 @@
+/* Variable Imports */
+@import '../variables.css';
+
+/* Card.module.css */
+
+
+.article-card {
+ 
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  max-width: 705px;
+  margin: 100px  auto;
+  font-family: var( --ff-base);
+  min-height: 250px;
+  
+}
+
+@media (max-width: 375px) {
+    .article-card {
+    flex-direction: column; /* Stack vertically on mobile */
+    margin: 60px auto; /* Reduce top/bottom margin */
+    max-height: 550px;
+    max-width: 80%; /* Full width on mobile */
+    border-radius: 10px; /* Optional: remove rounded corners on mobile */
+    overflow: hidden;
+    
+  }
+}
