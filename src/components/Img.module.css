@@ -3,9 +3,9 @@
 
 /* ArticleImg.module.css */
 .article-img {
-  flex: 0 0 46%; /* Keep original width */
+  flex: 0 0 46%; 
   min-width: 0;
-  overflow: hidden; /* Changed back to hidden */
+  overflow: hidden; 
   position: relative;
   margin-left: 0px; /* Pull container left to eliminate whitespace */
   max-width: 275px;
@@ -13,14 +13,14 @@
 }
 
 .article-img img {
-  /* width: calc(100% + 0px); /* Compensate for container shift */
+  
   height: 100%;
   object-fit: cover;
   object-position: 0px center; /* Crop 40px from right */
   position: relative;
   max-width: 275px;
   width: 275px;
-  /*left: -1.2rem; /* Fine-tune image position */
+  
 }
 
 @media (max-width: 375px) {
@@ -28,9 +28,9 @@
   .article-img {
     flex: none;
     width: 100%;
-    height: 185px; /* Set fixed height for mobile */
+    height: 185px; 
     margin-left: 0; /* Reset any negative margins */
-    border-radius: 0 !important; /* Optional: square corners */
+    border-radius: 0 !important; 
     max-width: none;
 
     overflow: hidden;
