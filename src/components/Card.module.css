@@ -20,11 +20,11 @@
 
 @media (max-width: 375px) {
     .article-card {
-    flex-direction: column; /* Stack vertically on mobile */
-    margin: 60px auto; /* Reduce top/bottom margin */
+    flex-direction: column; 
+    margin: 60px auto; 
     max-height: 550px;
     max-width: 80%; /* Full width on mobile */
-    border-radius: 10px; /* Optional: remove rounded corners on mobile */
+    border-radius: 10px; 
     overflow: hidden;
     
   }
